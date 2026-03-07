@@ -154,7 +154,7 @@ function removeItem(index){
 
 function goToOrder(){
   localStorage.setItem("checkoutCart", JSON.stringify(cart));
-<a href="pages/cart.html">Cart</a>
+  window.location.href = "order.html";
 }
 
 function goBack(){
@@ -167,3 +167,4 @@ renderCart();
 </body>
 
 </html>
+
