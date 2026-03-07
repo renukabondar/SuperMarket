@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foodgrains, Pulses & Household Items - Shri Balaji Supermarket</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+body{
+  background:#f4f4f4;
+}
+header{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:15px;
+  font-size:26px;
+}
+nav{
+  background:#c613c6;
+  text-align:center;
+  padding:10px;
+}
+nav a{
+  color:white;
+  margin:0 12px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.title{
+  text-align:center;
+  padding:20px;
+}
+.products{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  padding:20px;
+}
+.product-card{
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+.product-card img{
+  width:120px;
+  height:120px;
+  object-fit:contain;
+}
+.product-card h3{
+  margin:10px 0;
+  color:#2e7d32;
+}
+.product-card p{
+  font-size:14px;
+  margin:4px 0;
+  color:#444;
+}
+.price{
+  font-weight:bold;
+  margin:8px 0;
+  color:#000;
+}
+button{
+  background:#2e7d32;
+  color:white;
+  border:none;
+  padding:8px 15px;
+  border-radius:5px;
+  cursor:pointer;
+}
+button:hover{
+  background:#1b5e20;
+}
+footer{
+  background:#1b5e20;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>Shri Balaji Supermarket</header>
+
+<nav>
+<a href="index.html" class="active">Home</a>
+<a href="about.html">About</a>
+<a href="products.html">Shop</a>
+<a href="categories.html">Categories</a>
+<a href="cart.html">Cart</a>
+<a href="abc.html">Contact</a>
+</nav>
+
+<div class="title">
+  <h2>Household Items</h2>
+</div>
+
+<section class="products">
+
+<!-- Cleaning Essentials -->
+<div class="product-card">
+<img src="images/zadu.jpg" alt="Broom">
+<h3>Broom</h3>
+<p>Used for sweeping floors.</p>
+<p class="price">₹90</p>
+<button onclick="addToCart('Broom',90)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/bucket.jpg" alt="Bucket">
+<h3>Bucket</h3>
+<p>Used to store water.</p>
+<p class="price">₹150</p>
+<button onclick="addToCart('Bucket',150)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/dustbin.jpg" alt="Dustbin">
+<h3>Dustbin</h3>
+<p>Used to collect waste.</p>
+<p class="price">₹200</p>
+<button onclick="addToCart('Dustbin',200)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/cleaning.jpg" alt="Cleaning Cloth">
+<h3>Cleaning Cloth</h3>
+<p>Used for wiping surfaces.</p>
+<p class="price">₹60</p>
+<button onclick="addToCart('Cleaning Cloth',60)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/scrubber.jpg" alt="Scrubber">
+<h3>Scrubber</h3>
+<p>Used to clean utensils.</p>
+<p class="price">₹15</p>
+<button onclick="addToCart('Scrubber',15)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/cleaner.jpg" alt="Floor Cleaner">
+<h3>Floor Cleaner</h3>
+<p>Cleans floor surface and kills germs.</p>
+<p class="price">₹100</p>
+<button onclick="addToCart('Floor Cleaner',100)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/vim liquid.jpg" alt="Dishwash Liquid">
+<h3>Dishwash Liquid</h3>
+<p>Cleans utensils and removes oil.</p>
+<p class="price">₹120</p>
+<button onclick="addToCart('Dishwash Liquid',120)">Add to Cart</button>
+</div>
+
+<!-- Personal Care & Bathroom -->
+<div class="product-card">
+<img src="images/Bath Soap.jpg" alt="Bath Soap">
+<h3>Bath Soap</h3>
+<p>Keeps skin fresh and clean.</p>
+<p class="price">₹35</p>
+<button onclick="addToCart('Bath Soap',35)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/handwash.jpg" alt="Hand Wash">
+<h3>Hand Wash</h3>
+<p>Kills germs and cleans hands.</p>
+<p class="price">₹80</p>
+<button onclick="addToCart('Hand Wash',80)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/shampoo.jpg" alt="Shampoo">
+<h3>Shampoo</h3>
+<p>Cleans hair and makes it soft.</p>
+<p class="price">₹150</p>
+<button onclick="addToCart('Shampoo',150)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/Hair Oil.jpg" alt="Hair Oil">
+<h3>Hair Oil</h3>
+<p>Nourishes hair and promotes growth.</p>
+<p class="price">₹130</p>
+<button onclick="addToCart('Hair Oil',130)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/dove.jpg" alt="Dove Soap">
+<h3>Dove Bath Soap</h3>
+<p>Softens skin and keeps it fresh.</p>
+<p class="price">₹50</p>
+<button onclick="addToCart('Dove Bath Soap',50)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/toothpaste.jpg" alt="Toothpaste">
+<h3>Toothpaste</h3>
+<p>Prevents cavities and cleans teeth.</p>
+<p class="price">₹100</p>
+<button onclick="addToCart('Toothpaste',100)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/toothbrush.jpg" alt="Toothbrush">
+<h3>Toothbrush</h3>
+<p>Daily oral care, cleans teeth effectively.</p>
+<p class="price">₹50</p>
+<button onclick="addToCart('Toothbrush',50)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/towel.jpg" alt="Towel">
+<h3>Towel</h3>
+<p>Soft cotton towel used after bath.</p>
+<p class="price">₹200</p>
+<button onclick="addToCart('Towel',200)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/Face Wash.jpg" alt="Face Wash">
+<h3>Face Wash</h3>
+<p>Removes dirt and keeps face fresh.</p>
+<p class="price">₹120</p>
+<button onclick="addToCart('Face Wash',120)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/razor.jpg" alt="Razor">
+<h3>Razor</h3>
+<p>Used for shaving and grooming.</p>
+<p class="price">₹60</p>
+<button onclick="addToCart('Razor',60)">Add to Cart</button>
+</div>
+
+<!-- Kitchen & Dining -->
+<div class="product-card">
+<img src="images/plates.jpg" alt="Plates">
+<h3>Plates</h3>
+<p>Used for eating food.</p>
+<p class="price">₹150</p>
+<button onclick="addToCart('Plates',150)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/bowls.jpg" alt="Bowls">
+<h3>Bowls</h3>
+<p>Used for curry or snacks.</p>
+<p class="price">₹120</p>
+<button onclick="addToCart('Bowls',120)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/glasses.jpg" alt="Glasses">
+<h3>Glasses</h3>
+<p>Used for drinking water or juice.</p>
+<p class="price">₹100</p>
+<button onclick="addToCart('Glasses',100)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/PressureCooker.jpg" alt="Pressure Cooker">
+<h3>Pressure Cooker</h3>
+<p>Used for cooking food quickly.</p>
+<p class="price">₹900</p>
+<button onclick="addToCart('Pressure Cooker',900)">Add to Cart</button>
+</div>
+
+<!-- Laundry -->
+<div class="product-card">
+<img src="images/Washing Powder.jpg" alt="Washing Powder">
+<h3>Washing Powder</h3>
+<p>Removes stains from clothes.</p>
+<p class="price">₹130</p>
+<button onclick="addToCart('Washing Powder',130)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="images/Liquid Detergent.jpg" alt="Liquid Detergent">
+<h3>Liquid Detergent</h3>
+<p>Gentle on clothes, removes dirt and stains.</p>
+<p class="price">₹160</p>
+<button onclick="addToCart('Liquid Detergent',160)">Add to Cart</button>
+</div>
+
+</section>
+
+<footer>
+© 2025 Shri Balaji Supermarket
+</footer>
+
+<script>
+function addToCart(name, price){
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let found = cart.find(item => item.name === name);
+  if(found){ found.quantity += 1; }
+  else{ cart.push({name:name, price:price, quantity:1}); }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert(name + " added to cart");
+  window.location.href = "cart.html"; // corrected
+}
+</script>
+
+</body>
+</html>
